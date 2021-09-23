@@ -34,6 +34,7 @@ public class Test07 {
 		}
 		
 		Collections.sort(list);
+		
 		for(Point p : list) {
 			System.out.println(p.x + " " + p.y);
 		}
