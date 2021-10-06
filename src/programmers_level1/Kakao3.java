@@ -1,7 +1,7 @@
 package programmers_level1;
 
 import java.util.Arrays;
-
+// 2018 카카오 블라인드 채용_[1차]다트
 public class Kakao3 {
 	public int solution(String dartResult) {
         int answer = 0;
