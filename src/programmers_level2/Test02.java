@@ -3,36 +3,28 @@ package programmers_level2;
 import java.util.Stack;
 
 // 2017 팁스타운_짝지어 제거하기
-// 효율성테스트 2번만 통과못함...아직미해결
+
 public class Test02 {
 	public int solution(String s) {
-        int answer = -1;
         if(s.length() % 2 != 0) return 0;
         
-        Stack<String> stack = new Stack<>();
-        String[] sArr = s.split("");
-        stack.push(sArr[0]);
+        Stack<Character> stack = new Stack<>();
         
-        for(int i = 1 ; i < sArr.length ; i++){
-            String inStack = stack.peek();
-            String now = sArr[i];
-           
-            if(inStack.equals(now)){
+        for(int i = 0 ; i < s.length() ; i++){
+            if(stack.isEmpty()){
+                stack.push(s.charAt(i));
+                continue;
+            }
+
+            if(s.charAt(i) == stack.peek()){
                 stack.pop();
             } else {
-                stack.push(now);
+                stack.push(s.charAt(i));
             }
             
-            if(stack.isEmpty() && i+1 != sArr.length){
-                stack.push(sArr[i+1]);
-                i += 1;
-            }
         }
         
-        if(stack.isEmpty()) answer = 1;
-        else answer = 0;
-        
-        return answer;
+        return stack.isEmpty() ? 1 : 0;
     }
 	
 	public static void main(String[] args) {
