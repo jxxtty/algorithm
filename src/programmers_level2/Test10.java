@@ -3,6 +3,7 @@ package programmers_level2;
 import java.util.Arrays;
 
 public class Test10 {
+	// n행4열로 열이 고정되어있어 가능한 풀이
 	int solution(int[][] land) {
         int answer = 0;
         for(int i = 1 ; i < land.length ; i++){
