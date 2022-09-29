@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-// 2021 Ä«Ä«¿À ºí¶óÀÎµå Ã¤¿ë_¼øÀ§ °Ë»ö
+// 2021 ì¹´ì¹´ì˜¤ ë¸”ë¼ì¸ë“œ ì±„ìš©_ìˆœìœ„ ê²€ìƒ‰
 class Candidate{
 	String language;
 	String position;

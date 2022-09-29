@@ -2,12 +2,12 @@ package programmers_level1;
 
 import java.util.Arrays;
 
-// ¼¶¸Ó/À©ÅÍ ÄÚµù(~2018)_¿¹»ê
+// ì„¬ë¨¸/ìœˆí„° ì½”ë”©(~2018)_ì˜ˆì‚°
 public class Test03 {
 	public int solution(int[] d, int budget) {
         int answer = 0;
         int sum = Arrays.stream(d).sum();
-        if(budget >= sum) return d.length; // ÀÌ°Ç ¾ø¾îµµ µÉ°Í°°´Ù.
+        if(budget >= sum) return d.length; // ì´ê±´ ì—†ì–´ë„ ë  ê²ƒ ê°™ë‹¤
         else {
             Arrays.sort(d);
             int buffer = 0;

@@ -3,19 +3,19 @@ package programmers_level2;
 import java.util.ArrayList;
 import java.util.List;
 
-// ½æ¸Ó/À©ÅÍ ÄÚµù(~2018)_¿µ¾î ³¡¸»ÀÕ±â
+// ì¸ë¨¸/ìœˆí„° ì½”ë”©(~2018)_ì˜ì–´ ëë§ì‡ê¸°
 public class Test07 {
 	public int[] solution(int n, String[] words) {
         int[] answer = new int[2];
         List<String> checkList = new ArrayList<>();
         
-        String beforeWord = words[0]; // Ã³À½ ¸»ÇÏ´Â »ç¶÷Àº ¹«Á¶°Ç Åë°ú
+        String beforeWord = words[0]; // ì²˜ìŒ ë§í•˜ëŠ” ì‚¬ëŒì€ ë¬´ì¡°ê±´ í†µê³¼
         checkList.add(beforeWord);
         int player = 0;
         
         for(int i = 1 ; i < words.length ; i++){
             String word = words[i];
-            if(checkList.indexOf(word) != -1){ // ÀÌ¹Ì ³ª¿Â ´Ü¾î¸¦ ¸»ÇÏ¸é ½ÇÆĞ
+            if(checkList.indexOf(word) != -1){ // ì´ë¯¸ ë‚˜ì˜¨ ë‹¨ì–´ë¥¼ ë§í•˜ë©´ ì‹¤íŒ¨
                 player = i;
                 break;
             }
@@ -23,7 +23,7 @@ public class Test07 {
             
             char before = beforeWord.charAt(beforeWord.length()-1);
             char now = word.charAt(0);
-            if(before != now){ // ³¡¸»ÀÕ±â¿¡ ºÎÇÕµÇÁö ¾ÊÀº ´Ü¾î¸¦ ¸»ÇÏ¸é ½ÇÆĞ
+            if(before != now){ // ëë§ì‡ê¸°ì— ë¶€í•©ë˜ì§€ ì•Šì€ ë‹¨ì–´ë¥¼ ë§í•˜ë©´ ì‹¤íŒ¨
                 player = i;
                 break;
             }

@@ -1,5 +1,5 @@
 package programmers_level2;
-// ¿¬½À¹®Á¦_JadenCase ¹®ÀÚ¿­ ¸¸µé±â
+// ì—°ìŠµë¬¸ì œ_JadenCase ë¬¸ìì—´ ë§Œë“¤ê¸°
 public class Test04 {
 	public String solution(String s) {
         String answer = "";
@@ -7,7 +7,7 @@ public class Test04 {
         
         char[] strArr = s.toCharArray();
         boolean flag = false;
-        if(Character.isAlphabetic(strArr[0])) flag = true; // Ã¹±ÛÀÚ°¡ ¾ËÆÄºªÀÌ¶ó¸é true·Î ½ÃÀÛ
+        if(Character.isAlphabetic(strArr[0])) flag = true; // Ã¹ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½Äºï¿½ï¿½Ì¶ï¿½ï¿½ trueï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         
         for(int i = 0 ; i < strArr.length ; i++){
             char tmp = strArr[i];

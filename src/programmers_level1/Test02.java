@@ -2,7 +2,7 @@ package programmers_level1;
 
 import java.util.Scanner;
 
-// ¿ù°£ ÄÚµå Ã§¸°Áö ½ÃÁð1_3Áø¹ý µÚÁý±â
+// ì›”ê°„ ì½”ë“œ ì±Œë¦°ì§€ ì‹œì¦Œ1_3ì§„ë²• ë’¤ì§‘ê¸°
 public class Test02 {
 	public int solution(int n) {
         int answer = 0;

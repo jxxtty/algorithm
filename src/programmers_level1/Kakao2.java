@@ -5,17 +5,17 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-// 2019 Ä«Ä«¿À ºí¶óÀÎµå Ã¤¿ë_½ÇÆĞÀ²
+// 2019 ì¹´ì¹´ì˜¤ ë¸”ë¼ì¸ë“œ ì±„ìš©_ì‹¤íŒ¨ìœ¨
 public class Kakao2 {
 	 public int[] solution(int N, int[] stages) {
 	        int[] answer = new int[N];
 	        Map<Integer, Double> map = new HashMap<>();
 	        for(int i = 1 ; i <= N ; i++){
-	            int notSolve = 0; // µµ´ŞÇßÀ¸³ª Ç®Áö ¸øÇÑ »ç¶÷ ¼ö
-	            int solve = 0; // µµ´ŞÇÑ »ç¶÷ ¼ö
+	            int notSolve = 0; // ë„ë‹¬í–ˆìœ¼ë‚˜ í’€ì§€ ëª»í•œ ì‚¬ëŒ ìˆ˜
+	            int solve = 0;  // ë„ë‹¬í•œ ì‚¬ëŒ ìˆ˜
 	            for(int j = 0 ; j < stages.length ; j++){
-	                if(i == stages[j]) notSolve++; // ÇöÀç ½ºÅ×ÀÌÁö µµ´ŞÇßÀ¸³ª Ç®Áö¸øÇÑ »ç¶÷
-	                if(i <= stages[j]) solve++; // ÇöÀç ½ºÅ×ÀÌÁö¸¦ µµ´ŞÇß°í Ç¬ »ç¶÷
+	                if(i == stages[j]) notSolve++; // í˜„ì¬ ìŠ¤í…Œì´ì§€ ë„ë‹¬í–ˆìœ¼ë‚˜ í’€ì§€ëª»í•œ ì‚¬ëŒ
+	                if(i <= stages[j]) solve++; // í˜„ì¬ ìŠ¤í…Œì´ì§€ë¥¼ ë„ë‹¬í–ˆê³  í‘¼ ì‚¬ëŒ
 	               
 	            }
 	            double fail = 0.0;
@@ -33,7 +33,7 @@ public class Kakao2 {
 //	        });
 	        
 	        List<Integer> keySetList = new ArrayList<>(map.keySet());
-	        Collections.sort(keySetList, (o1, o2) -> (map.get(o2).compareTo(map.get(o1)))); // ³»¸²Â÷¼ø Á¤·Ä
+	        Collections.sort(keySetList, (o1, o2) -> (map.get(o2).compareTo(map.get(o1)))); // ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬
 	        
 	        int idx = 0;
 	        for(Integer key : keySetList){

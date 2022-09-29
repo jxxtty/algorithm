@@ -2,7 +2,7 @@ package programmers_level2;
 
 import java.util.Stack;
 
-// 2017 ÆÁ½ºÅ¸¿î_Â¦Áö¾î Á¦°ÅÇÏ±â
+// 2017 íŒìŠ¤íƒ€ìš´_ì§ì§€ì–´ ì œê±°í•˜ê¸°
 
 public class Test02 {
 	public int solution(String s) {

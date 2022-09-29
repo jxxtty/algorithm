@@ -1,5 +1,5 @@
 package programmers_level2;
-// ¿ù°£ÄÚµåÃ§¸°Áö ½ÃÁğ1_»ï°¢´ŞÆØÀÌ
+// ì›”ê°„ì½”ë“œì±Œë¦°ì§€ ì‹œì¦Œ1_ì‚¼ê°ë‹¬íŒ½ì´
 public class Test13 {
 	public int[] solution(int n) {
         int[] answer = new int[(n*(n+1))/2];
@@ -11,11 +11,11 @@ public class Test13 {
         
         for(int i = 0 ; i < n ; i++){
             for(int j = i ; j < n ; j++){
-                if (i % 3 == 0) { // ¾Æ·¡
+                if (i % 3 == 0) { // ì•„ë˜
                     x++;
-                } else if (i % 3 == 1) { // ¿À¸¥ÂÊ
+                } else if (i % 3 == 1) { // ì˜¤ë¥¸ìª½
                     y++;
-                } else if (i % 3 == 2) { // ´ë°¢¼±
+                } else if (i % 3 == 2) { // ëŒ€ê°ì„ 
                     x--;
                     y--;
                 }

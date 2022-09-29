@@ -1,35 +1,35 @@
 package programmers_level1;
 
 import java.util.Arrays;
-// 2018 Ä«Ä«¿À ºí¶óÀÎµå Ã¤¿ë_[1Â÷]´ÙÆ®
+// 2018 ì¹´ì¹´ì˜¤ ë¸”ë¼ì¸ë“œ ì±„ìš©_[1ì°¨]ë‹¤íŠ¸
 public class Kakao3 {
 	public int solution(String dartResult) {
         int answer = 0;
         char[] dart = dartResult.toCharArray();
-        int[] sum = new int[3]; // ´øÁö´Â ±âÈ¸´Â ¼¼¹ø
+        int[] sum = new int[3]; // ë˜ì§€ëŠ” ê¸°íšŒ 3ë²ˆ
         int num = 0;
-        int idx = 0; // sumÀÇ index°ª
+        int idx = 0; // sumì˜ indexê°’
         
         for(int i = 0 ; i < dart.length ; i++){
             if(Character.isDigit(dart[i])){
-                num = dart[i] - '0'; // 0~9Á¡
+                num = dart[i] - '0'; // 0~9ì 
                 if(dart[i] == '0' && i != 0){
-                    if(Character.isDigit(dart[i-1]))  num = 10; // 10Á¡
+                    if(Character.isDigit(dart[i-1]))  num = 10; // 10ì 
                 }
             }
             else if(Character.isAlphabetic(dart[i])){
-                if(dart[i] == 'D'){ // ´õºí
+                if(dart[i] == 'D'){ // ë”ë¸”
                     num = num * num;
-                } else if(dart[i] == 'T'){ // Æ®¸®ÇÃ
+                } else if(dart[i] == 'T'){ // íŠ¸ë¦¬í”Œ
                     num = num * num * num;
                 }
                 sum[idx] = num;
                 idx++;
             } else {
-                if(dart[i] == '*'){ // ½ºÅ¸»ó
+                if(dart[i] == '*'){ // ìŠ¤íƒ€ìƒ
                     sum[idx-1] = sum[idx-1] * 2;
-                    if(idx != 1) sum[idx-2] = sum[idx-2] * 2; // ½ºÅ¸»óÀÌ Ã³À½¿¡ ¿Â°Ô ¾Æ´Ñ°æ¿ì¸¸
-                } else { // ¾ÆÂ÷»ó
+                    if(idx != 1) sum[idx-2] = sum[idx-2] * 2; // ìŠ¤íƒ€ìƒì´ ì²˜ìŒì— ì˜¨ê²Œ ì•„ë‹Œê²½ìš°ë§Œ
+                } else { // ì•„ì°¨ìƒ
                     sum[idx-1] = sum[idx-1] * (-1);
                 }
             }

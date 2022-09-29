@@ -1,9 +1,9 @@
 package programmers_level2;
-// ¿¬½À¹®Á¦_¶¥µû¸Ô±â
+// ì—°ìŠµë¬¸ì œ_ë•…ë”°ë¨¹ê¸°
 import java.util.Arrays;
 
 public class Test10 {
-	// nÇà4¿­·Î ¿­ÀÌ °íÁ¤µÇ¾îÀÖ¾î °¡´ÉÇÑ Ç®ÀÌ
+	// ní–‰4ì—´ë¡œ ì—´ì´ ê³ ì •ë˜ì–´ìˆì–´ ê°€ëŠ¥í•œ í’€ì´
 	int solution(int[][] land) {
         int answer = 0;
         for(int i = 1 ; i < land.length ; i++){

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Kakao01_2 {
-	private static final String ENTER_FORMAT = "%s´ÔÀÌ µé¾î¿Ô½À´Ï´Ù.";
-    private static final String LEAVE_FORMAT = "%s´ÔÀÌ ³ª°¬½À´Ï´Ù.";
+	private static final String ENTER_FORMAT = "%së‹˜ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤.";
+    private static final String LEAVE_FORMAT = "%së‹˜ì´ ë‚˜ê°”ìŠµë‹ˆë‹¤.";
 
     private HashMap<String, UserInfo> userMap = new HashMap<>();
 

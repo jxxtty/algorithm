@@ -1,5 +1,5 @@
 package programmers_level1;
-// Å½¿å¹ı(Greedy)_Ã¼À°º¹
+// íƒìš•ë²•(Greedy)_ì²´ìœ¡ë³µ
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,14 +7,14 @@ public class Test11 {
 	 public int solution(int n, int[] lost, int[] reserve) {
 	        int answer = 0;
 	        int[] students = new int[n+1];
-	        for(int stu : lost){ // Ã¼À°º¹À» ÀÒ¾î¹ö¸° ÇĞ»ı Ã¼Å©
+	        for(int stu : lost){ // Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¾ï¿½ï¿½ï¿½ï¿½ ï¿½Ğ»ï¿½ Ã¼Å©
 	            students[stu] = -1;
 	        }
 	        
-	        List<Integer> list = new ArrayList<>(); // ¿©¹úÃ¼À°º¹À» ºô·ÁÁÙ ¼ö ÀÖ´Â ÇĞ»ı
+	        List<Integer> list = new ArrayList<>(); // ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ğ»ï¿½
 	        int attend_stu = n - lost.length;
 	        for(int stu : reserve){
-	            if(students[stu] == -1){ // µµ³­´çÇßÁö¸¸ ¿©¹úÃ¼À°º¹ÀÌ ÀÖ´Â ÇĞ»ı
+	            if(students[stu] == -1){ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ğ»ï¿½
 	                students[stu] = 0;
 	                attend_stu++; 
 	            } else {
@@ -22,8 +22,8 @@ public class Test11 {
 	            }
 	        }
 	        
-	        int back = 0; // µŞ¹øÈ£¿¡ ºô·ÁÁØ °æ¿ì
-	        int front = 0; // ¾Õ¹øÈ£¿¡ ºô·ÁÁØ °æ¿ì
+	        int back = 0; // ï¿½Ş¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	        int front = 0; // ï¿½Õ¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	        for(int stu : list){
 	            if(stu+1 <= n && students[stu+1] == -1) back++;
 	            if(stu-1 > 0 && students[stu-1] == -1) front++;

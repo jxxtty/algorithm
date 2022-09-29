@@ -2,7 +2,7 @@ package programmers_level1;
 
 import java.util.Scanner;
 
-// 2021 Ä«Ä«¿À Ã¤¿ë¿¬°èÇü ÀÎÅÏ½Ê_¼ıÀÚ ¹®ÀÚ¿­°ú ¿µ´Ü¾î
+// 2021 ì¹´ì¹´ì˜¤ ì±„ìš©ì—°ê³„í˜• ì¸í„´ì‹­_ìˆ«ì ë¬¸ìì—´ê³¼ ì˜ë‹¨ì–´
 public class Kakao1 {
 	public int solution(String s) {
         int answer = 0;

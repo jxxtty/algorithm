@@ -1,9 +1,10 @@
 package programmers_level1;
-// ¿ù°£ ÄÚµå Ã§¸°Áö ½ÃÁð2_¾à¼öÀÇ °³¼ö¿Í µ¡¼À
-// left ~ right±îÁö ¾à¼öÀÇ °³¼ö¸¦ ±¸ÇÏ´Âµ¥, ¾à¼öÀÇ °³¼ö°¡ Â¦¼ö¶ó¸é ÇØ´ç ¼ýÀÚ¸¦ ´õÇÏ°í È¦¼ö¶ó¸é »«´Ù
+
+// ì›”ê°„ ì½”ë“œ ì±Œë¦°ì§€ ì‹œì¦Œ2_ì•½ìˆ˜ì˜ ê°œìˆ˜ì™€ ë§ì…ˆ
+// left ~ rightê¹Œì§€ ì•½ìˆ˜ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ëŠ”ë°, ì•½ìˆ˜ì˜ ê°œìˆ˜ê°€ ì§ìˆ˜ë¼ë©´ í•´ë‹¹ ìˆ«ìžë¥¼ ë”í•˜ê³  í™€ìˆ˜ë¼ë©´ ëº€ë‹¤
 public class Test09 {
 	public int getDivisor(int num){
-        int cnt = 1; // Àý¹Ý±îÁö¸¸ ¾à¼öÀÇ °³¼ö¸¦ ±¸ÇÏ¹Ç·Î, º»ÀÎÀº ¹«Á¶°Ç Æ÷ÇÔµÇ°Ô 1·Î ¼³Á¤
+        int cnt = 1; // ì ˆë°˜ê¹Œì§€ë§Œ ì•½ìˆ˜ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ë¯€ë¡œ, ë³¸ì¸ì€ ë¬´ì¡°ê±´ í¬í•¨ë˜ê²Œ 1ë¡œ ì„¤ì •
         for(int i = 1 ; i <= num/2 ; i++){
             if(num % i == 0) cnt++;
         }

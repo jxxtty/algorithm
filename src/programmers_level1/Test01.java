@@ -3,7 +3,7 @@ package programmers_level1;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-// ¿ù°£ ÄÚµå Ã§¸°Áö ½ÃÁğ1_µÎ °³ »Ì¾Æ¼­ ´õÇÏ±â
+// ì›”ê°„ ì½”ë“œ ì±Œë¦°ì§€ ì‹œì¦Œ1_ë‘ ê°œ ë½‘ì•„ì„œ ë”í•˜ê¸°
 public class Test01 {
 	public int[] solution(int[] numbers) {
         int[] answer = {};

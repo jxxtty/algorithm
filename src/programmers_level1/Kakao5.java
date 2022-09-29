@@ -1,5 +1,5 @@
 package programmers_level1;
-// 2020 Ä«Ä«¿À ÀÎÅÏ½Ê_Å°ÆĞµå ´©¸£±â
+// 2020 ì¹´ì¹´ì˜¤ ì¸í„´ì‹­_í‚¤íŒ¨ë“œ ëˆ„ë¥´ê¸°
 public class Kakao5 {
 	static int left, right;
     public int getDistance(int now, int num){
@@ -12,7 +12,7 @@ public class Kakao5 {
         return Math.abs(x - numX) + Math.abs(y - numY);
     }
     
-    public int getDistance2(int now, int num) { // ¼ıÀÚ ´ç ÁÂÇ¥°ª(x,y)À» ¹Ì¸® ¹è¿­·Î ÀúÀåÇØµÎ°í È£ÃâÇØ¼­ »ç¿ëÇÑ´Ù
+    public int getDistance2(int now, int num) { // ìˆ«ì ë‹¹ ì¢Œí‘œê°’(x,y)ì„ ë¯¸ë¦¬ ë°°ì—´ë¡œ ì €ì¥í•´ë‘ê³  í˜¸ì¶œí•´ì„œ ì‚¬ìš©í•œë‹¤
     	int[][] numpadPos = {
                 {3,1}, //0
                 {0,0}, //1

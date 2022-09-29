@@ -1,5 +1,5 @@
 package programmers_level2;
-// ¿¬½À¹®Á¦_¿ÏÀüÅ½»ö_¼Ò¼öÃ£±â
+// ì—°ìŠµë¬¸ì œ_ì™„ì „íƒìƒ‰_ì†Œìˆ˜ì°¾ê¸°
 import java.util.ArrayList;
 import java.util.List;
 

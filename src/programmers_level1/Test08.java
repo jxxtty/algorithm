@@ -1,5 +1,5 @@
 package programmers_level1;
-//2021 Dev-Matching:À¥ ¹é¿£µå °³¹ß_·Î¶ÇÀÇ ÃÖ°í ¼øÀ§¿Í ÃÖÀú ¼øÀ§
+//2021 Dev-Matching:ì›¹ ë°±ì—”ë“œ ê°œë°œ_ë¡œë˜ì˜ ìµœê³  ìˆœìœ„ì™€ ìµœì € ìˆœìœ„
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.stream.LongStream;
 
 public class Test08 {
 	
-	public int getRank(int num){ // ¸ÂÈù °³¼ö¸¦ ³ÖÀ¸¸é ¸îµîÀÎÁö ¹İÈ¯
+	public int getRank(int num){ // ë§íŒ ê°œìˆ˜ë¥¼ ë„£ìœ¼ë©´ ëª‡ë“±ì¸ì§€ ë°˜í™˜
         if(num == 6) return 1;
         else if (num == 5) return 2;
         else if (num == 4) return 3;
@@ -25,7 +25,7 @@ public class Test08 {
             if(i == 0) zero++;
         }
         
-        if(zero == 6){ // ¸ğµÎ 0ÀÌ¶ó¸é °á°ú°¡ Á¤ÇØÁ®ÀÖÀ½
+        if(zero == 6){ // ëª¨ë‘ 0ì´ë¼ë©´ ê²°ê³¼ê°€ ì •í•´ì ¸ìˆìŒ
             answer[0] = 1;
             answer[1] = 6;
             return answer;

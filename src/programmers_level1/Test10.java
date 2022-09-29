@@ -1,5 +1,5 @@
 package programmers_level1;
-// Ã£¾Æ¶ó ÇÁ·Î±×·¡¹Ö ¸¶¿¡½ºÅÍ_ÆùÄÏ¸ó
+// ì°¾ì•„ë¼ í”„ë¡œê·¸ë˜ë° ë§ˆì—ìŠ¤í„°_í°ì¼“ëª¬
 import java.util.HashMap;
 import java.util.Map;
 

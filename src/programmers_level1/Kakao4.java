@@ -1,5 +1,5 @@
 package programmers_level1;
-// 2018 Ä«Ä«¿À ºí¶óÀÎµå Ã¤¿ë_[1Â÷]ºñ¹ĞÁöµµ
+// 2018 ì¹´ì¹´ì˜¤ ë¸”ë¼ì¸ë“œ ì±„ìš©_[1ì°¨]ë¹„ë°€ì§€ë„
 public class Kakao4 {
 	public String[] solution(int n, int[] arr1, int[] arr2) {
         String[] answer = new String[n];

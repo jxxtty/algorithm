@@ -1,5 +1,5 @@
 package programmers_level1;
-// ¿ù°£ ÄÚµå Ã§¸°Áö ½ÃÁğ3_¾ø´Â ¼ıÀÚ ´õÇÏ±â
+// ì›”ê°„ ì½”ë“œ ì±Œë¦°ì§€ ì‹œì¦Œ3_ì—†ëŠ” ìˆ«ì ë”í•˜ê¸°
 public class Test06 {
 	public int solution(int[] numbers) {
         int answer = 0;

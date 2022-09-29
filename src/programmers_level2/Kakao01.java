@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// 2019 Ä«Ä«¿À ºí¶óÀÎµå Ã¤¿ë_¿ÀÇÂÃ¤ÆÃ¹æ
+// 2019 ì¹´ì¹´ì˜¤ ë¸”ë¼ì¸ë“œ ì±„ìš©_ì˜¤í”ˆì±„íŒ…ë°©
 public class Kakao01 {
 	public String[] solution(String[] record) {
         String[] answer = {};
@@ -24,14 +24,14 @@ public class Kakao01 {
             String[] buffer = s.split(" ");
             if(buffer[0].equals("Enter")){
                 sb.append(userMap.get(buffer[1]));
-                sb.append("´ÔÀÌ µé¾î¿Ô½À´Ï´Ù.");
+                sb.append("ë‹˜ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤.");
                 answerList.add(sb.toString());
-                sb.setLength(0); // sbÃÊ±âÈ­
+                sb.setLength(0); // sbì´ˆê¸°í™”
             } else if (buffer[0].equals("Leave")){
                 sb.append(userMap.get(buffer[1]));
-                sb.append("´ÔÀÌ ³ª°¬½À´Ï´Ù.");
+                sb.append("ë‹˜ì´ ë‚˜ê°”ìŠµë‹ˆë‹¤.");
                 answerList.add(sb.toString());
-                sb.setLength(0); // sbÃÊ±âÈ­
+                sb.setLength(0); // sbì´ˆê¸°í™”
             }
         }
         answer = answerList.toArray(new String[answerList.size()]);

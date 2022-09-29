@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-// ¿¬½À_Á¤·Ä_°¡Àå Å« ¼ö -> ½Ã°£ÃÊ°ú¶ä ´Ù½ÃÇ®±â
+// ì—°ìŠµ_ì •ë ¬_ê°€ìž¥ í° ìˆ˜ -> ì‹œê°„ì´ˆê³¼ëœ¸ ë‹¤ì‹œí’€ê¸°
 public class Test14 { 
     static boolean[] isVisited;
     static int[] buffer;

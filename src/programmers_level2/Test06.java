@@ -4,13 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-
-// ½æ¸Ó/À©ÅÍ ÄÚµù(~2018)_½ºÅ³Æ®¸®
+// ì¸ë¨¸/ìœˆí„° ì½”ë”©(~2018)_ìŠ¤í‚¬íŠ¸ë¦¬
 public class Test06 {
 	public int solution(String skill, String[] skill_trees) {
         int answer = 0;
         List<String> skillSeq = Arrays.asList(skill.split(""));
-        List<String> availSkillSeq = new ArrayList<>(); // ¼±Çà½ºÅ³ÀÇ °¡´ÉÇÑ ¸ğµç °æ¿ì
+        List<String> availSkillSeq = new ArrayList<>(); // ì„ í–‰ìŠ¤í‚¬ì˜ ê°€ëŠ¥í•œ ëª¨ë“  ê²½ìš°
         StringBuilder sb = new StringBuilder();
         
         for(int i = skill.length() ; i >= 1 ; i--){
@@ -24,7 +23,7 @@ public class Test06 {
                     sb.append(skStr[i]);
                 }
             }
-            if(sb.toString().length() == 0) answer++; // ¼±Çà½ºÅ³°ü·Ã ½ºÅ³ÀÌ ÇÏ³ªµµ Æ÷ÇÔµÇÁö ¾ÊÀº°æ¿ì -> ¹«Á¶°Ç ¼öÇà°¡´É
+            if(sb.toString().length() == 0) answer++; // ì„ í–‰ìŠ¤í‚¬ê´€ë ¨ ìŠ¤í‚¬ì´ í•˜ë‚˜ë„ í¬í•¨ë˜ì§€ ì•Šì€ê²½ìš° -> ë¬´ì¡°ê±´ ìˆ˜í–‰ê°€ëŠ¥
             if(availSkillSeq.indexOf(sb.toString()) != -1) answer++;
             sb.setLength(0);
         }

@@ -1,5 +1,5 @@
 package programmers_level2;
-// ¿¬½À¹®Á¦_°¡Àå Å« Á¤»ç°¢Çü Ã£±â
+// ì—°ìŠµë¬¸ì œ_ê°€ì¥ í° ì •ì‚¬ê°í˜• ì°¾ê¸°
 public class Test09 {
 	public int solution(int [][]board) {
         int garo = board[0].length;

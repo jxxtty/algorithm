@@ -1,5 +1,5 @@
 package programmers_level1;
-// ¿ù°£ ÄÚµå Ã§¸°Áö ½ÃÁğ2_À½¾ç ´õÇÏ±â
+// ì›”ê°„ ì½”ë“œ ì±Œë¦°ì§€ ì‹œì¦Œ2_ìŒì–‘ ë”í•˜ê¸°
 public class Test04 {
 	public int solution(int[] absolutes, boolean[] signs) {
         int answer = 0;

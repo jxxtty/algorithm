@@ -1,5 +1,5 @@
 package programmers_level1;
-// ¼¶¸Ó/À©ÅÍÄÚµù(~2018)_¼Ò¼ö ¸¸µé±â
+// ì„¬ë¨¸/ìœˆí„°ì½”ë”©(~2018)_ì†Œìˆ˜ ë§Œë“¤ê¸°
 public class Test05 {
 	public boolean isPrime(int num) {
         if(num == 1) return false;
