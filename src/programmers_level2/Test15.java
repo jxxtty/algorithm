@@ -2,7 +2,7 @@ package programmers_level2;
 
 import java.util.Arrays;
 
-// ¿¬½À_Å½¿å¹ý_±¸¸íº¸Æ®
+
 public class Test15 {
 	public int solution(int[] people, int limit) {
         int answer = 0;
